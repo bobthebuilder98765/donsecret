@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>דון מקדולנס</title>
     <style>
-		body, html {
-			height: 100%;
-			margin: 0;
-			font-family: 'Courier New', monospace;
-			background-color: #000;
-			color: #8b0000;
-			overflow-x: hidden;
-			overflow-y: auto; /* Allow vertical scrolling */
-			visibility: hidden; /* Hide main content initially */
-			scroll-behavior: smooth; /* Smooth scrolling */
-		}
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Courier New', monospace;
+            background-color: #000;
+            color: #8b0000;
+            overflow-x: hidden;
+            overflow-y: auto;
+            visibility: hidden;
+            scroll-behavior: smooth;
+        }
         .tos-overlay {
             display: flex;
             flex-direction: column;
@@ -51,16 +51,15 @@
         .tos-overlay button:hover {
             background-color: #ff0000;
         }
-		.page {
-			min-height: 100vh; /* Ensure each page takes up full viewport height */
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			padding: 20px;
-			box-sizing: border-box;
-		}
-
+        .page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
         .container {
             max-width: 800px;
             width: 100%;
@@ -114,12 +113,12 @@
         .shake {
             animation: shake 0.5s infinite;
         }
-		.important-rule {
-			font-size: 1.5em; /* Increase the font size */
-			font-weight: bold; /* Make the text bold */
-			animation: shake 0.5s infinite; /* Add shaking animation */
-			margin: 20px 0; /* Add margin for spacing */
-		}
+        .important-rule {
+            font-size: 1.5em;
+            font-weight: bold;
+            animation: shake 0.5s infinite;
+            margin: 20px 0;
+        }
         @keyframes shake {
             0% { transform: translate(1px, 1px) rotate(0deg); }
             10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -142,18 +141,18 @@
             text-align: right;
             margin: 20px 0;
             overflow-y: scroll;
-            height: calc(100vh - 40px); /* Adjust height to fit within page */
+            height: calc(100vh - 40px);
         }
-		.scroll-icon {
-			position: fixed;
-			bottom: 20px;
-			left: 50%;
-			transform: translateX(-50%);
-			font-size: 2em;
-			color: #8b0000;
-			animation: bounce 2s infinite;
-			cursor: pointer;
-		}
+        .scroll-icon {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2em;
+            color: #8b0000;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+        }
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
             40% { transform: translateY(-30px) translateX(-50%); }
@@ -167,7 +166,6 @@
             animation: shake 0.5s infinite;
             box-shadow: 0 0 10px #ff0000;
         }
-        /* Custom Cursor */
         body {
             cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAPTHgACja6wD///8AUvD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERABEQAAAAAAAAAAAAAAABEQAREAAAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAAAABABCAAAAAAAAAAAAAAAAACREIiAAAAAAAAAAAAAAAAAEEkEAAAAAAAAAAAAAAAAABBJDAAAAAAAAAAAAAAAAAAQSQQAAAAAAAAAAAAAAAAAEEkMAAAAAAAAAAAAAAAAABBJBAAAAAAAAAAAAAAAAAAQSQwAAAAAAAAAAAAAAAAAEEkEAAAAAAAAAAAAAAAAzMzMzMwAAAAAAAAAAAAAAMxEREzMAAAAAAAAAAAAAABMzMzMTAAAAAAAAAAAAAAAxETMzMxAAAAAAAAAAAAAAMREzMzMRAAAAAAAAAAAAETERMzMzERAAAAAAAAAAAAEzMzMzMxEQAAAAAAAAAAARMDMzAzMREAAAAAAAAAAAETMzMzMzERAAAAAAAAAAABETMzMzMREQAAAAAAAAAAABEzMzMzERAAAAAABAAAAAAREREREREQAAAAAAFAAAAAERERERERAAAAAAAEFAAAAAERERERAAAAAAAAAUFAAAAAARERAAAAAAAAAAQUFAAAAAAAAAAAAAAAAAABQUFAAAAAAAAAAAAAAAAAD////////////jH///4x////t////7f///+z////Af///4P///+D////g////4P///+D////g////4P///wA///8AP///AD///wAf//8AD//+AAf//gAH//wAB//8AAf//AAH//4AD/3+AA/8/gAf/H8Af/w/wf/8H////A////w=='), auto;
         }
@@ -192,145 +190,49 @@
     </style>
 </head>
 <body>
-    <!-- ToS Overlay -->
     <div class="tos-overlay" id="tos-overlay">
         <h1>Terms of Service</h1>
-        <p>בדרוכים הבאים לאתר של דון מקדולנס</p>
-        <p>ה אני מסכים אתם מסכמים לתנאים הבאים ::</p> 
-        <p> אני אעקוב אחרי החוקים. אני אעקוב אחרי החוקים. אני אעקוב אחרי החוקים. אני אעקוב אחרי החוקים..</p>
-		<p> אם לא הוא יבוא - אם לא הוא יבוא - אם לא הוא יבוא - אם לא הוא יבוא - אם לא הוא יבוא <p>
-        <button id="agree-button">I Agree</button>
+        <p>This website contains mature content. By clicking 'Accept', you confirm that you are of legal age.</p>
+        <button id="accept-button">Accept</button>
     </div>
 
-    <!-- Main Content -->
+    <div class="blood"></div>
+    <div class="vignette"></div>
+
     <div class="page">
         <div class="container">
             <h1 class="glitch">דון מקדולנס</h1>
-            <img src="chainsaw.jpg" alt="Chainsaw" class="chainsaw" />
-            <h1 class="flicker">ברוכים הבאים לכת המקדולנס</h1>
-            <p class="creepy-text shake">אתה בטוח שאתה מוכן להיכנס לסביבתו של דון?</p>
-            <img src="creepy_ronald1.jpg" alt="Creepy Ronald McDonald" />
-            <img src="creepy_restaurant.jpg" alt="Abandoned McDonald's" />
+            <img src="donsecret/chainsaw.jpg" class="chainsaw" alt="Chainsaw">
+            <div class="rules">
+                <p class="creepy-text flicker">
+                    [Add your rules or story content here...]
+                </p>
+                <p class="important-rule">Important Rule: [Your important rule here...]</p>
+            </div>
         </div>
+        <div class="scroll-icon" onclick="scrollToTop()">↑</div>
     </div>
 
-	<div class="page" id="page2">
-		<div class="container">
-			<h1 class="flicker">חוקים וכללים</h1>
-			<div class="rules">
-				<p>כל 3 שנים משתנה החוקים:</p>
-				<p>ב3 שנים הראשונות כל מי שיודע על דון מקדולנס צריך לומר דון מקדולנס הכי הרבה פעמיים שהוא יכול ולהשתשמש בזה במשפטיים בלי סיבה.</p>
-				<p>אחרי 3 שנים כל מי שיודע את החוקים אסור לו להגיד דון מקדולנס לא משנה מה.</p>
-				<p>אם הוא שומע מישהו אומר דון מקדולנס הוא חייב לעשות את הדברים הבאים.</p>
-				<p>אם זה ה3 חודשים הראשוניים כל פעם שמישהו אומר דון מקדולנס הוא חייב לרדוף אחריו ולהרביץ לו.</p>
-				<p>ב3 חודשיים אחרי זה כל מי שאומר דון מקדולנס ומרביצים לו לא צריך להרביץ לו עד סוף היום.</p>
-				<p>אחרי זה למשך 3 חודשיים צריך להרביץ רק אם יש ירח מלא.</p>
-				<p>*בזמן שיודע החוקים רודף אחרי אנשים הוא חייב ללחשש את המילים: סלנו האמנו שבעצם זה דון מקדולנס שאתה אומר את זה הפוך, חייב לעשות את זה. בנוסף לכך צריך לעשות תנועות ספצפיות עם הידיים אבל זה לא חובה</p>
-				<p class="important-rule">מי שלא יצייט לכללים אלו יסבול ביסוריים עד סוף חיו</p>
-			</div>
-		</div>
-	</div>
-
-
-    <div class="scroll-icon">&#x21E9;</div>
-
-    <audio id="scream" src="ronald_laugh.mp3" preload="auto"></audio>
-    <audio id="static" src="static-noise.mp3" preload="auto"></audio>
-    <audio id="whisper" src="whisper.mp3" preload="auto"></audio>
-    <audio id="ambient-music" src="ambient-music.mp3" preload="auto"></audio>
+    <audio id="creepy-sound" loop>
+        <source src="donsecret/creepy-sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Check if the user has agreed to the ToS
-            if (!localStorage.getItem('tos-agreed')) {
-                document.getElementById('tos-overlay').style.display = 'flex';
-                document.body.style.visibility = 'hidden'; // Hide main content until agreement
-            } else {
-                document.body.style.visibility = 'visible'; // Show main content if already agreed
-            }
+        const acceptButton = document.getElementById('accept-button');
+        const tosOverlay = document.getElementById('tos-overlay');
+        const body = document.body;
+        const creepySound = document.getElementById('creepy-sound');
+
+        acceptButton.addEventListener('click', function() {
+            tosOverlay.style.display = 'none';
+            body.style.visibility = 'visible';
+            creepySound.play();
         });
 
-        document.getElementById('agree-button').addEventListener('click', function() {
-            localStorage.setItem('tos-agreed', 'true');
-            document.getElementById('tos-overlay').style.display = 'none';
-            document.body.style.visibility = 'visible'; // Show main content
-            var ambientMusic = document.getElementById('ambient-music');
-            ambientMusic.volume = 0.2;
-            ambientMusic.play().catch(function(error) {
-                console.log('Failed to start ambient music:', error);
-            });
-        });
-
-        // Play Ronald's laugh on click
-        document.body.addEventListener('click', function() {
-            var scream = document.getElementById('scream');
-            scream.play().catch(function(error) {
-                console.log('Failed to play scream:', error);
-            });
-        });
-
-        // Random flickering effect
-        setInterval(function() {
-            if (Math.random() > 0.8) {
-                document.body.style.backgroundColor = "#300";
-                setTimeout(function() {
-                    document.body.style.backgroundColor = "#000";
-                }, 50);
-            }
-        }, 500);
-
-        // Smooth scroll to next page
-        document.querySelector('.scroll-icon').addEventListener('click', function() {
-            window.scrollTo({
-                top: window.innerHeight,
-                behavior: 'smooth'
-            });
-        });
-
-        // Hide scroll icon when reached bottom
-        window.addEventListener('scroll', function() {
-            var scrollIcon = document.querySelector('.scroll-icon');
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-                scrollIcon.style.display = 'none';
-            } else {
-                scrollIcon.style.display = 'block';
-            }
-        });
-
-        // Random static noise
-        setInterval(function() {
-            if (Math.random() > 0.9) {
-                var static = document.getElementById('static');
-                static.volume = 0.3;
-                static.play().catch(function(error) {
-                    console.log('Failed to play static noise:', error);
-                });
-            }
-        }, 10000);
-
-        // Creepy whisper on hover
-        document.querySelectorAll('img').forEach(function(img) {
-            img.addEventListener('mouseover', function() {
-                var whisper = document.getElementById('whisper');
-                whisper.volume = 0.5;
-                whisper.play().catch(function(error) {
-                    console.log('Failed to play whisper:', error);
-                });
-            });
-        });
-
-        // Apply glitch effect randomly
-        setInterval(function() {
-            var elements = document.querySelectorAll('h1, p');
-            elements.forEach(function(el) {
-                if (Math.random() > 0.9) {
-                    el.classList.add('glitch');
-                    setTimeout(function() {
-                        el.classList.remove('glitch');
-                    }, 1000);
-                }
-            });
-        }, 3000);
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     </script>
 </body>
 </html>
